@@ -1,11 +1,8 @@
 package testScript;
 
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
-
 import org.testng.annotations.Test;
-
 import constants.Constant;
 import pages.AdminUser_Page;
 import pages.Home_Page;
@@ -22,21 +19,14 @@ public class AdminUser_Test extends Base {
 	  String username=ExcelUtility.readStringData(1, 0, "Login_Page");
 	  String password=ExcelUtility.readStringData(1, 1, "Login_Page");
 	  Login_Page login=new Login_Page(driver);
-	  login.enter_username(username);
-	  login.enter_password(password);
+	  login.enter_usernameandpassword(username,password);
 	  homepage=login.click_Signin();
-	  adminuser=homepage.clickMoreInfo();
-	 // login.click_Signin();
-	  //AdminUser_Page addNew=new AdminUser_Page(driver);
-	  //addNew.clickMoreInfo();
-	  adminuser.createNew();
+	  adminuser=homepage.userisabletoclickMoreInfo();
+	  adminuser.userisabletoclickcreateNew();
 	  String usrname=ExcelUtility.readStringData(1, 0, "Admin_Pageadd");
 	  String pasword=ExcelUtility.readStringData(1, 1, "Admin_Pageadd");
-	  adminuser.enterUsername(usrname);
-	  adminuser.enterPassword(pasword);
-	  adminuser.selectUsertype();
-	  adminuser.clickSave();
-	  boolean IsgreenAlertIsDisplayed=adminuser.greenAlert();
+	  adminuser.userisabletoenterUsername(usrname).userisabletoenterPassword(pasword).userisabletoselectUsertype().userisabletoclickSave();
+	  boolean IsgreenAlertIsDisplayed=adminuser.greenAlertisdisplayed();
 	  assertTrue(IsgreenAlertIsDisplayed,Constant.ERRORMESSAGEFORADMINUSERTEST);
 	  
   }
@@ -46,21 +36,14 @@ public class AdminUser_Test extends Base {
 	  String username=ExcelUtility.readStringData(1, 0, "Login_Page");
 	  String password=ExcelUtility.readStringData(1, 1, "Login_Page");
 	  Login_Page login=new Login_Page(driver);
-	  login.enter_username(username);
-	  login.enter_password(password);
+	  login.enter_usernameandpassword(username,password);
 	  homepage=login.click_Signin();
-	  adminuser=homepage.clickMoreInfo();
-	  //login.click_Signin();
-	  //AdminUser_Page addNew=new AdminUser_Page(driver);
-	  //addNew.clickMoreInfo();
-	  adminuser.createNew();
+	  adminuser=homepage.userisabletoclickMoreInfo();
+	  adminuser.userisabletoclickcreateNew();
 	  String usrname=ExcelUtility.readStringData(1, 0, "Admin_Pageadd");
 	  String pasword=ExcelUtility.readStringData(1, 1, "Admin_Pageadd");
-	  adminuser.enterUsername(usrname);
-	  adminuser.enterPassword(pasword);
-	  adminuser.selectUsertype();
-	  adminuser.clickSave();
-	  boolean IsRedAlertIsDisplayed=adminuser.redAlert();
-	  assertTrue(IsRedAlertIsDisplayed,"green alert displayed");  
+	  adminuser.userisabletoenterUsername(usrname).userisabletoenterPassword(pasword).userisabletoselectUsertype().userisabletoclickSave();
+	  boolean IsRedAlertIsDisplayed=adminuser.redAlertisdisplayed();
+	  assertTrue(IsRedAlertIsDisplayed,Constant.ERRORMESSAGEFORADDADMINUSERTEST);  
   }
 }

@@ -9,45 +9,50 @@ import org.testng.annotations.Factory;
 
 public class AdminUserSearch_Page {
 	public WebDriver driver;
-	public AdminUserSearch_Page(WebDriver driver) 
-	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+
+	public AdminUserSearch_Page(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement searchbtn;
-	@FindBy(xpath="//input[@id='un']")WebElement username;
-	@FindBy(xpath="//select[@id='ut']")WebElement userType;
-	@FindBy(xpath="//button[@value='sr']")WebElement searchbynameandtype;
-	@FindBy(xpath="//div[@class='row-sm-12']")WebElement table;
-	@FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']")WebElement notfound;
+
 	
-	public void firstsearch()
-	{
-		searchbtn.click();
-	}
-	public void enterusername(String usernamefield)
-	{
+	@FindBy(xpath = "//input[@id='un']")
+	WebElement username;
+	@FindBy(xpath = "//select[@id='ut']")
+	WebElement userType;
+	@FindBy(xpath = "//button[@value='sr']")
+	WebElement searchbynameandtype;
+	@FindBy(xpath = "//div[@class='row-sm-12']")
+	WebElement table;
+	@FindBy(xpath = "//center[text()='.........RESULT NOT FOUND.......']")
+	WebElement notfound;
+
+	
+	public AdminUserSearch_Page userisabletoenterusername(String usernamefield) {
 		username.sendKeys(usernamefield);
+		return this;
 	}
-	public void enterusertype()
-	{
+
+	public AdminUserSearch_Page userisabletoselectusertype() {
 		userType.click();
-		Select dropdn1=new Select(userType);
+		Select dropdn1 = new Select(userType);
 		dropdn1.selectByIndex(2);
+		return this;
 	}
-	public void searchclick()
-	{
+
+	public AdminUserSearch_Page userisabletosearchdetails() {
 		searchbynameandtype.click();
+		return this;
 	}
-	public boolean searchforparticularusernameintable()
-	{
-	
-	return table.isDisplayed();
-	
+
+	public boolean searchforparticularusernameintable() {
+
+		return table.isDisplayed();
+
 	}
-	public boolean notFound()
-	{
-	return notfound.isDisplayed();	
+
+	public boolean searchnotFound() {
+		return notfound.isDisplayed();
 	}
 
 }
