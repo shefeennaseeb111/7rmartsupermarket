@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScript.ManageFooterText_Test">
+      <class name="testScript.AdminUser_Test">
         <methods>
+          <include name="userIsAbleToAddNewAdminwithvaliddetails"/>
           <include name="afterMethod"/>
-          <include name="verifyTheUserIsAbleToManageFooterText"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testScript.ManageFooterText_Test -->
+      </class> <!-- testScript.AdminUser_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

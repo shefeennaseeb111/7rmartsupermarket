@@ -13,7 +13,7 @@ import utilities.ExcelUtility;
 public class Home_Test extends Base {
 	public Home_Page homepage;
 
-	@Test
+	@Test(retryAnalyzer = retry.Retry.class)
 	public void isTheUserIsAbleToLogOut() throws IOException {
 
 		String username = ExcelUtility.readStringData(1, 0, "Login_Page");

@@ -19,5 +19,6 @@ public class Constant {
 		public static final String TESTDATAFILE=System.getProperty("user.dir")+"\\src\\main\\resources\\TestData.xlsx";
 		public static final String TESTIIMAGE=System.getProperty("user.dir")+"\\src\\main\\resources\\iphone.jpg";
 		public static final String TESTIMAGEFORSUBCATEGORY=System.getProperty("user.dir")+"\\src\\main\\resources\\onion.jpg";
+		public static final String CONFIGFILE=System.getProperty("user.dir")+"\\src\\\\test\\\\resources\\config.properties";
 	}
 

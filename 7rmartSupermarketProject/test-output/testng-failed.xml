@@ -8,6 +8,13 @@
     <parameter name="password" value="admin"/>
     <parameter name="username" value="admin"/>
     <classes>
+      <class name="testScript.AdminUser_Test">
+        <methods>
+          <include name="userIsAbleToAddNewAdminwithvaliddetails"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testScript.AdminUser_Test -->
       <class name="testScript.Login_Pagetest">
         <methods>
           <include name="afterMethod"/>

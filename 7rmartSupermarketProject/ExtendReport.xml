@@ -9,6 +9,8 @@
 		<parameter name="password" value="admin"></parameter>
 		<classes>
 			<class name="testScript.Login_Pagetest">
+			</class>
+			<class name="testScript.AdminUser_Test">
 
 			</class>
 		</classes>
