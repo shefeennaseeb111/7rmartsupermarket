@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="paralleltesting" parallel="classes" thread-count="5">
+
+	<test name="chrometest">
+		<parameter name="browzer" value="chrome"></parameter>
+		<parameter name="username" value="admin"></parameter>
+		<parameter name="password" value="admin"></parameter>
+		<classes>
+			<class name="testScript.Login_Pagetest">
+				<methods>
+					<include
+						name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" />
+
+				</methods>
+			</class>
+			<class name="testScript.Add_SubCategoryTest">
+				<methods>
+					<include
+						name="toAddSubCategory" />
+
+				</methods>
+			</class>
+			
+			
+		</classes>
+
+
+	</test>
+</suite>
