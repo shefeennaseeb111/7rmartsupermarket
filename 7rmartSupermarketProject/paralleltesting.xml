@@ -15,14 +15,10 @@
 				</methods>
 			</class>
 			<class name="testScript.Add_SubCategoryTest">
-				<methods>
-					<include
-						name="toAddSubCategory" />
 
-				</methods>
 			</class>
-			
-			
+
+
 		</classes>
 
 
