@@ -12,13 +12,13 @@ public class Page_utility {
 		Select dropdn = new Select(dropdown);
 		dropdn.selectByIndex(index);
 	}
-	public void darganddrop(WebElement drag,WebElement destination)
-	{
-		Actions action=new Actions(driver);
+
+	public void darganddrop(WebElement drag, WebElement destination) {
+		Actions action = new Actions(driver);
 		action.moveToElement(drag);
 		action.doubleClick(drag).perform();
 		action.dragAndDrop(drag, destination).build().perform();
-		
+
 	}
 
 }

@@ -21,14 +21,15 @@ public class AddCategory_Test extends Base {
 		String username = ExcelUtility.readStringData(1, 0, "Login_Page");
 		String password = ExcelUtility.readStringData(1, 1, "Login_Page");
 		Login_Page login = new Login_Page(driver);
-		login.enter_usernameandpassword(username,password);
+		login.enter_usernameandpassword(username, password);
 		homepage = login.click_Signin();
 		add = homepage.userisabletoclikcategorybutton();
 		add.userisabletoclicknewbutton();
 		String categoryname = ExcelUtility.readStringData(2, 0, "Add_Category");
-		add.userisabletoentercategoryname(categoryname).userisabletoclickdiscount().userisabletouploadfile().userisabletoselecttopmenu().userisabletoselectleftmenu().userisabletocliksave();
-		boolean alertt=add.isalertisDisplayed();
-		assertTrue(alertt,Constant.ERRORMESSAGEFORNEWCATEGORY);
-		
+		add.userisabletoentercategoryname(categoryname).userisabletoclickdiscount().userisabletouploadfile()
+				.userisabletoselecttopmenu().userisabletoselectleftmenu().userisabletocliksave();
+		boolean alertt = add.isalertisDisplayed();
+		assertTrue(alertt, Constant.ERRORMESSAGEFORNEWCATEGORY);
+
 	}
 }

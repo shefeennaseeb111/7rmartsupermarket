@@ -63,9 +63,9 @@ public class Home_Page {
 		clickmanaganews.click();
 		return new Manage_NewsPage(driver);
 	}
-	public ManageFooterText_Page userIsAbleToClickManageFooterText()
-	{
-		managefooterclick.click();	
+
+	public ManageFooterText_Page userIsAbleToClickManageFooterText() {
+		managefooterclick.click();
 		return new ManageFooterText_Page(driver);
 	}
 

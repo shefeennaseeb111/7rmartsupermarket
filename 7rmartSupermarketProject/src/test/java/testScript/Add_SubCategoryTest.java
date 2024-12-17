@@ -25,8 +25,9 @@ public class Add_SubCategoryTest extends Base {
 		addsubcategory = homepage.userisabletoclicksubcategorybutton();
 		addsubcategory.userisabletoclicknewbutton().userisabletoselectcategoryfield();
 		String subcategoryname = ExcelUtility.readStringData(2, 0, "Add_SubCategory");
-		addsubcategory.userisabletoentersubcategory(subcategoryname).userisabletouploadimage().userisabletoclicksavebutton();
-		boolean IsAlertIsDispalyed=addsubcategory.isalertDisplayed();
-		assertTrue(IsAlertIsDispalyed,Constant.ERRORMESSAGEFORADDSUBCATEGORY);
+		addsubcategory.userisabletoentersubcategory(subcategoryname).userisabletouploadimage()
+				.userisabletoclicksavebutton();
+		boolean IsAlertIsDispalyed = addsubcategory.isalertDisplayed();
+		assertTrue(IsAlertIsDispalyed, Constant.ERRORMESSAGEFORADDSUBCATEGORY);
 	}
 }

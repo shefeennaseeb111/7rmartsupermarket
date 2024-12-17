@@ -17,7 +17,7 @@
 		</classes>
 
 
-	</test> 
+	</test>
 	<test name="edgetest">
 		<parameter name="browzer" value="edge"></parameter>
 		<parameter name="username" value="admin"></parameter>
@@ -33,6 +33,6 @@
 		</classes>
 
 
-	</test> 
+	</test>
 </suite> 
 

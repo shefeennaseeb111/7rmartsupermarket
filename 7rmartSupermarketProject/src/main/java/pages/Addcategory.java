@@ -1,4 +1,5 @@
 package pages;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import constants.Constant;
 import utilities.FileUpload_Utilities;
-
 
 public class Addcategory {
 	public WebDriver driver;
@@ -30,8 +30,10 @@ public class Addcategory {
 	WebElement showOnLeftmenu;
 	@FindBy(xpath = "//button[text()='Save']")
 	WebElement savebtn;
-	@FindBy(xpath="//i[@class='icon fas fa-check']")WebElement alertt;
-	@FindBy(xpath="//a[@onclick='click_button(2)']")WebElement clicksearch;
+	@FindBy(xpath = "//i[@class='icon fas fa-check']")
+	WebElement alertt;
+	@FindBy(xpath = "//a[@onclick='click_button(2)']")
+	WebElement clicksearch;
 
 	public Addcategory userisabletoclicknewbutton() {
 		addnewcategory.click();
@@ -69,14 +71,14 @@ public class Addcategory {
 		savebtn.click();
 		return this;
 	}
-	public boolean isalertisDisplayed()
-	{
+
+	public boolean isalertisDisplayed() {
 		return alertt.isDisplayed();
 	}
-	public Search_CategoryPage userisabletoclicksearch()
-	{
+
+	public Search_CategoryPage userisabletoclicksearch() {
 		clicksearch.click();
 		return new Search_CategoryPage(driver);
-		
+
 	}
 }

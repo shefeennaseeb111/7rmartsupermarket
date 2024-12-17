@@ -69,10 +69,10 @@ public class AdminUser_Page {
 	public boolean redAlertisdisplayed() {
 		return failAlert.isDisplayed();
 	}
+
 	public AdminUserSearch_Page userisabletoclicksearchbutton() {
 		searchbtn.click();
 		return new AdminUserSearch_Page(driver);
 	}
-
 
 }

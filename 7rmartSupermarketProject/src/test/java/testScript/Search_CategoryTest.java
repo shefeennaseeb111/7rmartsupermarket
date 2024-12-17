@@ -1,4 +1,5 @@
 package testScript;
+
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
@@ -24,11 +25,11 @@ public class Search_CategoryTest extends Base {
 		login.enter_usernameandpassword(username, password);
 		homepage = login.click_Signin();
 		add = homepage.userisabletoclikcategorybutton();
-		search=add.userisabletoclicksearch();
+		search = add.userisabletoclicksearch();
 		String categoryname = ExcelUtility.readStringData(3, 0, "Add_Category");
 		search.userisableTosearchwithCategoryName(categoryname);
 		search.userisableTosearchTheCategory();
-		boolean isTableIsDisplayed =search.isTableisdisplayed();
-		assertTrue(isTableIsDisplayed,Constant.ERRORMESSAGEFORSEARCHCATEGORY);
+		boolean isTableIsDisplayed = search.isTableisdisplayed();
+		assertTrue(isTableIsDisplayed, Constant.ERRORMESSAGEFORSEARCHCATEGORY);
 	}
 }

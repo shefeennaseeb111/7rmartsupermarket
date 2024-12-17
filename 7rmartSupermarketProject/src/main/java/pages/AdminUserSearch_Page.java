@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.Factory;
+//import org.testng.annotations.Factory;
 
 public class AdminUserSearch_Page {
 	public WebDriver driver;
@@ -15,7 +15,6 @@ public class AdminUserSearch_Page {
 		PageFactory.initElements(driver, this);
 	}
 
-	
 	@FindBy(xpath = "//input[@id='un']")
 	WebElement username;
 	@FindBy(xpath = "//select[@id='ut']")
@@ -27,7 +26,6 @@ public class AdminUserSearch_Page {
 	@FindBy(xpath = "//center[text()='.........RESULT NOT FOUND.......']")
 	WebElement notfound;
 
-	
 	public AdminUserSearch_Page userisabletoenterusername(String usernamefield) {
 		username.sendKeys(usernamefield);
 		return this;

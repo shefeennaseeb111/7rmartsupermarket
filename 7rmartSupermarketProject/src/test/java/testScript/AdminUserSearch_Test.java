@@ -21,11 +21,11 @@ public class AdminUserSearch_Test extends Base {
 		String username = ExcelUtility.readStringData(1, 0, "Login_Page");
 		String password = ExcelUtility.readStringData(1, 1, "Login_Page");
 		Login_Page login = new Login_Page(driver);
-		login.enter_usernameandpassword(username,password);
+		login.enter_usernameandpassword(username, password);
 		homepage = login.click_Signin();
 		adminuser = homepage.userisabletoclickMoreInfo();
 		String uname = ExcelUtility.readStringData(3, 0, "Admin_search");
-		search=adminuser.userisabletoclicksearchbutton();
+		search = adminuser.userisabletoclicksearchbutton();
 		search.userisabletoenterusername(uname);
 		search.userisabletoselectusertype();
 		search.userisabletosearchdetails();
@@ -38,11 +38,11 @@ public class AdminUserSearch_Test extends Base {
 		String username = ExcelUtility.readStringData(1, 0, "Login_Page");
 		String password = ExcelUtility.readStringData(1, 1, "Login_Page");
 		Login_Page login = new Login_Page(driver);
-		login.enter_usernameandpassword(username,password);
+		login.enter_usernameandpassword(username, password);
 		homepage = login.click_Signin();
 		adminuser = homepage.userisabletoclickMoreInfo();
 		String usname = ExcelUtility.readStringData(2, 0, "Admin_search");
-		search=adminuser.userisabletoclicksearchbutton();
+		search = adminuser.userisabletoclicksearchbutton();
 		search.userisabletoenterusername(usname);
 		search.userisabletoselectusertype();
 		search.userisabletosearchdetails();

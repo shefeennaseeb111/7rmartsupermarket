@@ -25,14 +25,14 @@ public class Search_SubCategoryTest extends Base {
 		Login_Page login = new Login_Page(driver);
 		login.enter_usernameandpassword(username, password);
 		homepage = login.click_Signin();
-		addsubcategory=homepage.userisabletoclicksubcategorybutton();
-		subcategory=addsubcategory.userisabletoclicksearchbutton();
+		addsubcategory = homepage.userisabletoclicksubcategorybutton();
+		subcategory = addsubcategory.userisabletoclicksearchbutton();
 		subcategory.verifyuserisabletoselectcategoryfield();
 		String subcategoryname = ExcelUtility.readStringData(3, 0, "Add_SubCategory");
 		subcategory.verifyuserisabletoentersubcategory(subcategoryname);
 		subcategory.verifyTheUserIsAbleToSearchDetails();
-		boolean isTableIsDisplayed =subcategory.isTableDisplayed();
-		assertTrue(isTableIsDisplayed,Constant.ERRORMESSAGEFORSEARCHSUBCATEGORY);
+		boolean isTableIsDisplayed = subcategory.isTableDisplayed();
+		assertTrue(isTableIsDisplayed, Constant.ERRORMESSAGEFORSEARCHSUBCATEGORY);
 	}
-	
+
 }

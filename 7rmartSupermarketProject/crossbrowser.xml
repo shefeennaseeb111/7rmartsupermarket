@@ -8,16 +8,12 @@
 		<parameter name="password" value="admin"></parameter>
 		<classes>
 			<class name="testScript.Login_Pagetest">
-				<methods>
-					<include
-						name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" />
 
-				</methods>
 			</class>
 		</classes>
 
 
-	</test> 
+	</test>
 	<test name="edgetest">
 		<parameter name="browzer" value="edge"></parameter>
 		<parameter name="username" value="admin"></parameter>
@@ -33,6 +29,6 @@
 		</classes>
 
 
-	</test> 
+	</test>
 </suite> 
 

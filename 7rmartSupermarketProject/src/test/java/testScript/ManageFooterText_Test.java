@@ -15,14 +15,15 @@ import utilities.ExcelUtility;
 public class ManageFooterText_Test extends Base {
 	public Home_Page homepage;
 	public ManageFooterText_Page text;
-  @Test
-  public void verifyTheUserIsAbleToManageFooterText() throws IOException {
-	  	String username = ExcelUtility.readStringData(1, 0, "Login_Page");
+
+	@Test
+	public void verifyTheUserIsAbleToManageFooterText() throws IOException {
+		String username = ExcelUtility.readStringData(1, 0, "Login_Page");
 		String password = ExcelUtility.readStringData(1, 1, "Login_Page");
 		Login_Page login = new Login_Page(driver);
 		login.enter_usernameandpassword(username, password);
 		homepage = login.click_Signin();
-		text=homepage.userIsAbleToClickManageFooterText();
+		text = homepage.userIsAbleToClickManageFooterText();
 		text.userIsAbleToClickUpdateicon();
 		String address = ExcelUtility.readStringData(1, 0, "ManageFooter_Text");
 		text.userIsAbleToAddAddress(address);
@@ -31,8 +32,8 @@ public class ManageFooterText_Test extends Base {
 		String phone = ExcelUtility.readIntegerData(1, 2, "ManageFooter_Text");
 		text.userIsAbleToAddPhoneNumber(phone);
 		text.userIsAbleToclickupdate();
-		boolean IsFooterTextCanUpdateSuccessfully=text.isFooterTextUpdateSuccessfully();
-		assertTrue(IsFooterTextCanUpdateSuccessfully,Constant.ERRORMESSAGEFORMANAGEFOOTERTEXTPAGE);
-		
-  }
+		boolean IsFooterTextCanUpdateSuccessfully = text.isFooterTextUpdateSuccessfully();
+		assertTrue(IsFooterTextCanUpdateSuccessfully, Constant.ERRORMESSAGEFORMANAGEFOOTERTEXTPAGE);
+
+	}
 }
