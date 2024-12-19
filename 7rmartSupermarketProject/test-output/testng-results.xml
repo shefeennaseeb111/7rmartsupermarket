@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-16T13:09:54 IST" name="paralleltesting" finished-at="2024-12-16T13:10:08 IST" duration-ms="14682">
+  <suite started-at="2024-12-19T12:23:56 IST" name="Suite" finished-at="2024-12-19T12:24:14 IST" duration-ms="17634">
     <groups>
+      <group name="smoke">
+        <method signature="Login_Pagetest.verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword()[pri:0, instance:testScript.Login_Pagetest@692f203f]" name="verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword" class="testScript.Login_Pagetest"/>
+        <method signature="Login_Pagetest.verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@692f203f]" name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" class="testScript.Login_Pagetest"/>
+        <method signature="Login_Pagetest.verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@74e52ef6]" name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" class="testScript.Login_Pagetest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-12-16T13:09:54 IST" name="chrometest" finished-at="2024-12-16T13:10:08 IST" duration-ms="14682">
+    <test started-at="2024-12-19T12:23:56 IST" name="chrometest" finished-at="2024-12-19T12:24:10 IST" duration-ms="13667">
       <class name="testScript.Login_Pagetest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@459e9125]" started-at="2024-12-16T13:09:54 IST" name="beforeMethod" finished-at="2024-12-16T13:10:06 IST" duration-ms="12698" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:23:56 IST" name="beforeMethod" finished-at="2024-12-19T12:23:59 IST" duration-ms="2493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,36 +23,190 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@459e9125]" started-at="2024-12-16T13:10:06 IST" name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" finished-at="2024-12-16T13:10:07 IST" duration-ms="108" status="FAIL">
-          <exception class="java.io.IOException">
+        <test-method signature="verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword()[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:23:59 IST" name="verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword" finished-at="2024-12-19T12:24:00 IST" duration-ms="1243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:00 IST" name="afterMethod" finished-at="2024-12-19T12:24:00 IST" duration-ms="135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword status=SUCCESS method=Login_Pagetest.verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword()[pri:0, instance:testScript.Login_Pagetest@692f203f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:00 IST" name="beforeMethod" finished-at="2024-12-19T12:24:02 IST" duration-ms="1626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:02 IST" name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" finished-at="2024-12-19T12:24:02 IST" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:02 IST" name="afterMethod" finished-at="2024-12-19T12:24:02 IST" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword status=SUCCESS method=Login_Pagetest.verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@692f203f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:02 IST" name="beforeMethod" finished-at="2024-12-19T12:24:04 IST" duration-ms="1612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifytheUserIsAbleToLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:04 IST" name="verifytheUserIsAbleToLoginWithValidCredentials" finished-at="2024-12-19T12:24:05 IST" duration-ms="672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheUserIsAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:05 IST" name="afterMethod" finished-at="2024-12-19T12:24:05 IST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifytheUserIsAbleToLoginWithValidCredentials status=SUCCESS method=Login_Pagetest.verifytheUserIsAbleToLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:05 IST" name="beforeMethod" finished-at="2024-12-19T12:24:07 IST" duration-ms="1651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifytheUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:07 IST" name="verifytheUserisAbleToLoginWithInvalidCredentials" data-provider="credentials" finished-at="2024-12-19T12:24:07 IST" duration-ms="717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheUserisAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:07 IST" name="afterMethod" finished-at="2024-12-19T12:24:07 IST" duration-ms="125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifytheUserisAbleToLoginWithInvalidCredentials status=SUCCESS method=Login_Pagetest.verifytheUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:07 IST" name="beforeMethod" finished-at="2024-12-19T12:24:09 IST" duration-ms="1527" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifytheUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:09 IST" name="verifytheUserisAbleToLoginWithInvalidCredentials" data-provider="credentials" finished-at="2024-12-19T12:24:09 IST" duration-ms="527" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shefeena]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shef111]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Stream Closed]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Dashboard']"}
+  (Session info: chrome=131.0.6778.204)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c947de7cb99eee206be0e95188c95ecf, findElement {value=//p[text()='Dashboard'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.204, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\shefe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51871/devtoo..., se:cdpVersion: 131.0.6778.204, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c947de7cb99eee206be0e95188c95ecf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.IOException: Stream Closed
-at java.base/java.io.FileInputStream.available0(Native Method)
-at java.base/java.io.FileInputStream.available(FileInputStream.java:415)
-at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
-at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:182)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:82)
-at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:98)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
-at utilities.ExcelUtility.readStringData(ExcelUtility.java:22)
-at testScript.Login_Pagetest.verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword(Login_Pagetest.java:43)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Dashboard']"}
+  (Session info: chrome=131.0.6778.204)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c947de7cb99eee206be0e95188c95ecf, findElement {value=//p[text()='Dashboard'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.204, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\shefe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51871}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51871/devtoo..., se:cdpVersion: 131.0.6778.204, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c947de7cb99eee206be0e95188c95ecf
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
+at pages.Login_Page.isDashBoardLoaded(Login_Page.java:44)
+at testScript.Login_Pagetest.verifytheUserisAbleToLoginWithInvalidCredentials(Login_Pagetest.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,20 +219,33 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.IOException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@459e9125]" started-at="2024-12-16T13:10:07 IST" name="afterMethod" finished-at="2024-12-16T13:10:08 IST" duration-ms="1833" status="PASS">
+        </test-method> <!-- verifytheUserisAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@692f203f]" started-at="2024-12-19T12:24:09 IST" name="afterMethod" finished-at="2024-12-19T12:24:10 IST" duration-ms="230" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword status=FAILURE method=Login_Pagetest.verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@459e9125] output={null}]]]>
+                <![CDATA[[TestResult name=verifytheUserisAbleToLoginWithInvalidCredentials status=FAILURE method=Login_Pagetest.verifytheUserisAbleToLoginWithInvalidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.Login_Pagetest@692f203f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -81,71 +253,36 @@ at java.base/java.lang.Thread.run(Thread.java:842)
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- testScript.Login_Pagetest -->
-      <class name="testScript.Add_SubCategoryTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Add_SubCategoryTest@4afcd809]" started-at="2024-12-16T13:09:54 IST" name="beforeMethod" finished-at="2024-12-16T13:10:06 IST" duration-ms="12588" status="PASS">
+    </test> <!-- chrometest -->
+    <test started-at="2024-12-19T12:24:10 IST" name="edgetest" finished-at="2024-12-19T12:24:14 IST" duration-ms="3935">
+      <class name="testScript.Login_Pagetest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testScript.Login_Pagetest@74e52ef6]" started-at="2024-12-19T12:24:10 IST" name="beforeMethod" finished-at="2024-12-19T12:24:12 IST" duration-ms="2052" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="toAddSubCategory()[pri:0, instance:testScript.Add_SubCategoryTest@4afcd809]" started-at="2024-12-16T13:10:06 IST" name="toAddSubCategory" finished-at="2024-12-16T13:10:07 IST" duration-ms="175" status="FAIL">
-          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
-            <message>
-              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
-at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
-at utilities.ExcelUtility.readStringData(ExcelUtility.java:22)
-at testScript.Add_SubCategoryTest.toAddSubCategory(Add_SubCategoryTest.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0XC6217A20
-at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
-at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-... 23 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
+        <test-method signature="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@74e52ef6]" started-at="2024-12-19T12:24:12 IST" name="verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword" finished-at="2024-12-19T12:24:12 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- toAddSubCategory -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Add_SubCategoryTest@4afcd809]" started-at="2024-12-16T13:10:07 IST" name="afterMethod" finished-at="2024-12-16T13:10:07 IST" duration-ms="271" status="PASS">
+        </test-method> <!-- verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.Login_Pagetest@74e52ef6]" started-at="2024-12-19T12:24:12 IST" name="afterMethod" finished-at="2024-12-19T12:24:14 IST" duration-ms="1271" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=toAddSubCategory status=FAILURE method=Add_SubCategoryTest.toAddSubCategory()[pri:0, instance:testScript.Add_SubCategoryTest@4afcd809] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword status=SUCCESS method=Login_Pagetest.verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword()[pri:0, instance:testScript.Login_Pagetest@74e52ef6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testScript.Add_SubCategoryTest -->
-    </test> <!-- chrometest -->
-  </suite> <!-- paralleltesting -->
+      </class> <!-- testScript.Login_Pagetest -->
+    </test> <!-- edgetest -->
+  </suite> <!-- Suite -->
 </testng-results>

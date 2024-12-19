@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import constants.Constant;
 import pages.Login_Page;
 import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
 public class Login_Pagetest extends Base {
 	@Test
@@ -37,11 +38,14 @@ public class Login_Pagetest extends Base {
 
 	}
 
-	@Test
+	@Test(groups = { "smoke" })
 
 	public void verifyTheuserisAbleToLoginWithInvalidUsernameAndValidPassword() throws IOException {
-		String username = ExcelUtility.readStringData(4, 0, "Login_Page");
-		String password = ExcelUtility.readStringData(4, 1, "Login_Page");
+		FakerUtility fake = new FakerUtility();
+		String username = fake.getFakeFirstName();
+		// String username = ExcelUtility.readStringData(4, 0, "Login_Page");
+		// String password = ExcelUtility.readStringData(4, 1, "Login_Page");
+		String password = fake.getFakeLastName();
 		Login_Page login = new Login_Page(driver);
 		login.enter_usernameandpassword(username, password);
 		login.click_Signin();
@@ -50,7 +54,7 @@ public class Login_Pagetest extends Base {
 
 	}
 
-	@Test
+	@Test(groups = { "smoke" })
 	public void verifyTheUserIsAbleToLoginWithValidUsernameAndInvalidPassword() throws IOException {
 		String username = ExcelUtility.readStringData(1, 0, "Login_Page");
 		String password = ExcelUtility.readStringData(3, 1, "Login_Page");
